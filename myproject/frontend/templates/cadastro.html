@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="\myproject\frontend\css\styles.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+
+    <div class="container">
+    
+        <h1 class="title-box">Cadastro de Usuários</h1>
+        
+        <div class="forms-container">
+        
+            <div class="create-user">
+                <h2 class="title-box">Criar Novo Usuário</h2>
+                <form action="#" id="create-user-form">
+                    <label for="first-name">Primeiro Nome</label>
+                    <input type="text" id="first-name" placeholder="Ex: João">
+                    
+                    <label for="last-name">Último Nome</label>
+                    <input type="text" id="last-name" placeholder="Ex: Silva">
+                    
+                    <label for="date-of-birth">Data de Nascimento</label>
+                    <input type="date" id="date-of-birth">
+                    
+                    <button type="submit">Criar</button>
+                </form>
+            </div>
+            
+            <div class="edit-user">
+                <h2 class="title-box">Editar Usuário</h2>
+                <form action="#" id="edit-user-form">
+                    <label for="edit-first-name">Primeiro Nome</label>
+                    <input type="text" id="edit-first-name" placeholder="Ex: João">
+                    
+                    <label for="edit-last-name">Último Nome</label>
+                    <input type="text" id="edit-last-name" placeholder="Ex: Silva">
+                    
+                    <label for="edit-date-of-birth">Data de Nascimento</label>
+                    <input type="date" id="edit-date-of-birth">
+                    
+                    <button type="submit">Editar</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="list-container">
+        
+        <ul class="user-list"></ul>
+        
+        </div>
+        
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

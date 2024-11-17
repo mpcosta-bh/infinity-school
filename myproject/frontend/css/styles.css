@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Definir a fonte e o estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o container principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para os títulos principais */
+h1.title-box, h2.title-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando o container dos formulários para flexbox */
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilos para os formulários */
+.create-user, .edit-user {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Ajustando a largura para os formulários ficarem lado a lado */
+}
+
+/* Estilo para os campos de input */
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para os labels */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para os títulos dos formulários (dentro de .create-user e .edit-user) */
+h2.title-box {
+    margin-bottom: 20px;
+}
+
+/* Adicionando espaçamento entre os campos */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+/* Estilos para a lista de usuários (caso haja alguma) */
+#user-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user-list li {
+    background-color: #e9e9e9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
