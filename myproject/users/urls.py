@@ -11,3 +11,4 @@ path('<int:user_id>/put/',UserDetailView.as_view(),name='users-put')
 
 
 ]
+#Não padrão

@@ -24,10 +24,13 @@ const createUser=async(evento)=>{
 
 const carregarUsuarios=async()=>{
 
-    const response=await fetch(`${apiUrl}/users/new-user/`)
+    const response=await fetch(`${apiUrl}/users/`)
     const users=await response.json()
+    console.log(users)
     const userList = document.getElementById("user-list")
+    console.log(userList)
     userList.innerHTML=""
+    console.log(users)
     users.forEach(user => {
         const userItem =document.createElement("li")
         userItem.textContent=`Olá ${user.first_name}`
@@ -38,5 +41,6 @@ const carregarUsuarios=async()=>{
     });
 }
 
+carregarUsuarios()
 
 

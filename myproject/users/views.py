@@ -1,7 +1,7 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404 #metodo manipulação bsase dados
 from django.views import View
 from django.http import JsonResponse
-from .models import User
+from .models import User #classe users
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import json
